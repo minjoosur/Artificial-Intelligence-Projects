@@ -287,7 +287,7 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
     Your minimax agent with alpha-beta pruning (question 3)
     """
 
-def get_value(self, state, depth, agents, alpha, beta):
+    def get_value(self, state, depth, agents, alpha, beta):
         if state.isWin() or state.isLose():
             return self.evaluationFunction(state)
 
